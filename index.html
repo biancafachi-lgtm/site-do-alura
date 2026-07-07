@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback de Professores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📚 Feedback de Professores</h1>
+
+    <form id="feedbackForm">
+        <input type="text" id="professor" placeholder="Nome do Professor" required>
+
+        <select id="tipo">
+            <option value="Elogio">Elogio</option>
+            <option value="Reclamação">Reclamação</option>
+        </select>
+
+        <textarea id="mensagem" placeholder="Escreva seu feedback..." required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Feedbacks</h2>
+
+    <div id="listaFeedback"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
